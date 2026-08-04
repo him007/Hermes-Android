@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- The launcher-specific composition keeps the portrait and headphones inside the
+         adaptive-icon safe zone. The system may apply a circle, squircle or rounded mask. -->
+    <item>
+        <bitmap
+            android:src="@drawable/hermes_launcher_foreground_art"
+            android:antialias="true"
+            android:filter="true"
+            android:gravity="fill" />
+    </item>
+</layer-list>

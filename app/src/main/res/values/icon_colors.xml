@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Hermes Light icon palette. Every semantic color has a night-mode counterpart. -->
+    <color name="hermes_icon_blue">#3370FF</color>
+    <color name="hermes_icon_cyan">#20C7C9</color>
+    <color name="hermes_icon_green">#24C48E</color>
+    <color name="hermes_icon_purple">#8B5CF6</color>
+    <color name="hermes_icon_amber">#FFB323</color>
+    <color name="hermes_icon_coral">#F45B69</color>
+    <color name="hermes_icon_ink">#596780</color>
+    <color name="hermes_icon_on_color">#FFFFFF</color>
+
+    <!-- Compatibility aliases retained for the launcher mark and older resources. -->
+    <color name="hermes_icon_mint">#24C48E</color>
+    <color name="hermes_icon_lavender">#8B5CF6</color>
+</resources>

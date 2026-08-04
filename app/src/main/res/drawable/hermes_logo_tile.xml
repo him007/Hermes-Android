@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Kept as a true VectorDrawable: Compose painterResource cannot load layer-list drawables. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path android:fillColor="#FF4E78E8" android:pathData="M0,0H108V108H0Z" />
+    <path android:fillColor="#FFFFFFFF" android:pathData="M50,23H58V88H50Z" />
+    <path android:fillColor="@color/hermes_icon_mint" android:pathData="M50,33C43,23 31,22 22,30C34,28 43,33 50,42ZM58,33C65,23 77,22 86,30C74,28 65,33 58,42Z" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M50.5,40C35.5,45 38,54 51.5,59C65,64 65,73 51.5,80"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeLineCap="round"
+        android:strokeWidth="5" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M57.5,40C72.5,45 70,54 56.5,59C43,64 43,73 56.5,80"
+        android:strokeColor="@color/hermes_icon_mint"
+        android:strokeLineCap="round"
+        android:strokeWidth="5" />
+    <path android:fillColor="#FFFFFFFF" android:pathData="M54,14a6,6 0,1 0,0 12a6,6 0,1 0,0 -12" />
+</vector>

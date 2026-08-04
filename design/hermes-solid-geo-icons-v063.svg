@@ -1,0 +1,277 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 930" width="1200" height="930">
+  <defs><symbol id="logo_mark" viewBox="0 0 108 108"><path d="M50,23H58V88H50Z" fill="#FFFFFF" fill-opacity="1.000"/><path d="M50,33C43,23 31,22 22,30C34,28 43,33 50,42ZM58,33C65,23 77,22 86,30C74,28 65,33 58,42Z" fill="#30B69A"/><path d="M50.5,40C35.5,45 38,54 51.5,59C65,64 65,73 51.5,80" fill="#000000" fill-opacity="0.000" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/><path d="M57.5,40C72.5,45 70,54 56.5,59C43,64 43,73 56.5,80" fill="#000000" fill-opacity="0.000" stroke="#30B69A" stroke-width="5" stroke-linecap="round"/><path d="M54,14a6,6 0,1 0,0 12a6,6 0,1 0,0 -12" fill="#FFFFFF" fill-opacity="1.000"/></symbol><symbol id="ai" viewBox="0 0 24 24"><path d="M10.7,1H13.3V4H17.5C20.54,4 23,6.46 23,9.5V17.5C23,20.54 20.54,23 17.5,23H6.5C3.46,23 1,20.54 1,17.5V9.5C1,6.46 3.46,4 6.5,4H10.7Z" fill="#8A72E8"/><path d="M5.2,8H18.8V16.2H5.2Z" fill="#FFFFFF" fill-opacity="1.000"/><path d="M7.8,10.2H10.3V12.8H7.8ZM13.7,10.2H16.2V12.8H13.7ZM8,18.1H16V20.1H8Z" fill="#4E78E8"/></symbol><symbol id="appearance" viewBox="0 0 24 24"><path d="M11.8,2C5.84,2 1.2,6.18 1.2,11.4C1.2,16.62 5.42,20.8 10.7,20.8H13.2C14.64,20.8 15.66,19.42 15.27,18.04L14.86,16.58C14.5,15.3 15.46,14.02 16.79,14.02H19.15C21.42,14.02 23,12.38 23,10.14C23,5.4 18.2,2 11.8,2Z" fill="#8A72E8"/><path d="M6.4,6.2a1.65,1.65 0,1 0,0 3.3a1.65,1.65 0,1 0,0 -3.3" fill="#30B69A"/><path d="M11.8,4.3a1.65,1.65 0,1 0,0 3.3a1.65,1.65 0,1 0,0 -3.3" fill="#F2B84B"/><path d="M5.5,11.4a1.65,1.65 0,1 0,0 3.3a1.65,1.65 0,1 0,0 -3.3M11,9.3a1.65,1.65 0,1 0,0 3.3a1.65,1.65 0,1 0,0 -3.3" fill="#FFFFFF" fill-opacity="1.000"/></symbol><symbol id="archive" viewBox="0 0 24 24"><path d="M3.2,7.2H20.8V19C20.8,20.66 19.46,22 17.8,22H6.2C4.54,22 3.2,20.66 3.2,19Z" fill="#F2B84B"/><path d="M2,2.5H22C22.66,2.5 23.2,3.04 23.2,3.7V7.5C23.2,8.16 22.66,8.7 22,8.7H2C1.34,8.7 0.8,8.16 0.8,7.5V3.7C0.8,3.04 1.34,2.5 2,2.5Z" fill="#4E78E8"/><path d="M8,12H16V15H8Z" fill="#FFFFFF" fill-opacity="1.000"/></symbol><symbol id="artifact" viewBox="0 0 24 24"><path d="M4.3,1.5H14L20.5,8V20.2C20.5,21.75 19.25,23 17.7,23H4.3C2.75,23 1.5,21.75 1.5,20.2V4.3C1.5,2.75 2.75,1.5 4.3,1.5Z" fill="#30B69A"/><path d="M14,1.5L20.5,8H16.6C15.16,8 14,6.84 14,5.4Z" fill="#4E78E8"/><path d="M5.5,10.5H16.5V12.7H5.5ZM5.5,14.8H15V17H5.5ZM5.5,19.1H12.5V21.3H5.5Z" fill="#FFFFFF" fill-opacity="1.000"/></symbol><symbol id="attachment" viewBox="0 0 24 24"><path d="M8.5,12.8L14.75,6.55C16.22,5.08 18.6,5.08 20.07,6.55S21.54,10.4 20.07,11.87L11.7,20.24C9.49,22.45 5.91,22.45 3.7,20.24S1.49,14.45 3.7,12.24L12.07,3.87C13.54,2.4 15.92,2.4 17.39,3.87" fill="#000000" fill-opacity="0.000" stroke="#4E78E8" stroke-width="2.65" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.55,15.55L14.9,8.2" fill="#000000" fill-opacity="0.000" stroke="#30B69A" stroke-width="2.65" stroke-linecap="round"/></symbol><symbol id="chat" viewBox="0 0 24 24"><path d="M5.5,2.5H18.5C20.99,2.5 23,4.51 23,7V14.2C23,16.69 20.99,18.7 18.5,18.7H10.5L4.4,22.5L5.3,18.1C2.86,17.99 1,16.05 1,13.7V7C1,4.51 3.01,2.5 5.5,2.5Z" fill="#4E78E8"/><path d="M6.8,7.2H16.4C17.12,7.2 17.7,7.78 17.7,8.5S17.12,9.8 16.4,9.8H6.8C6.08,9.8 5.5,9.22 5.5,8.5S6.08,7.2 6.8,7.2ZM6.8,12.1H12.6C13.32,12.1 13.9,12.68 13.9,13.4S13.32,14.7 12.6,14.7H6.8C6.08,14.7 5.5,14.12 5.5,13.4S6.08,12.1 6.8,12.1Z" fill="#FFFFFF" fill-opacity="1.000"/></symbol><symbol id="connection" viewBox="0 0 24 24"><path d="M4.5,3H19.5C21.43,3 23,4.57 23,6.5V17.5C23,19.43 21.43,21 19.5,21H4.5C2.57,21 1,19.43 1,17.5V6.5C1,4.57 2.57,3 4.5,3Z" fill="#4E78E8"/><path d="M5.5,8H18.5V10.3H5.5ZM5.5,13.7H14.5V16H5.5Z" fill="#FFFFFF" fill-opacity="1.000"/><path d="M17.8,12.5L22.2,16.8L17.8,21.1V18.1H13.7V15.5H17.8Z" fill="#30B69A"/></symbol><symbol id="delete" viewBox="0 0 24 24"><path d="M5,7H19L18.1,20.1C17.99,21.73 16.64,23 15,23H9C7.36,23 6.01,21.73 5.9,20.1Z" fill="#EF7B72"/><path d="M3,4.5H21V8.2H3ZM8.2,1.3H15.8C16.46,1.3 17,1.84 17,2.5V5.5H14.4V3.8H9.6V5.5H7V2.5C7,1.84 7.54,1.3 8.2,1.3Z" fill="#EF7B72"/><path d="M8.5,11H10.7V19H8.5ZM13.3,11H15.5V19H13.3Z" fill="#FFFFFF" fill-opacity="0.86"/></symbol><symbol id="file" viewBox="0 0 24 24"><path d="M4.3,1.3H14L21,8.3V20.2C21,21.75 19.75,23 18.2,23H4.3C2.75,23 1.5,21.75 1.5,20.2V4.1C1.5,2.55 2.75,1.3 4.3,1.3Z" fill="#4E78E8"/><path d="M14,1.3L21,8.3H16.8C15.25,8.3 14,7.05 14,5.5Z" fill="#8A72E8"/><path d="M5.6,11H16.8V13.2H5.6ZM5.6,15.2H16.8V17.4H5.6ZM5.6,19.4H13.2V21.6H5.6Z" fill="#FFFFFF" fill-opacity="1.000"/></symbol><symbol id="folder" viewBox="0 0 24 24"><path d="M3.2,3.2H8.9L11.2,5.9H19.3C20.79,5.9 22,7.11 22,8.6V18.6C22,20.48 20.48,22 18.6,22H5.4C3.52,22 2,20.48 2,18.6V4.4C2,3.74 2.54,3.2 3.2,3.2Z" fill="#F2B84B"/><path d="M2,8H22V10.4H2Z" fill="#FFFFFF" fill-opacity="0.72"/></symbol><symbol id="information" viewBox="0 0 24 24"><path d="M12,1.5a10.5,10.5 0,1 0,0 21a10.5,10.5 0,1 0,0 -21" fill="#4E78E8"/><path d="M10.6,9.6H13.4V18H10.6ZM12,5.2a1.65,1.65 0,1 0,0 3.3a1.65,1.65 0,1 0,0 -3.3" fill="#FFFFFF" fill-opacity="1.000"/></symbol><symbol id="link" viewBox="0 0 24 24"><path d="M3.25,5.05C5.51,2.79 9.17,2.79 11.43,5.05L13.65,7.27L10.98,9.94L8.76,7.72C7.98,6.94 6.7,6.94 5.92,7.72L4.92,8.72C4.14,9.5 4.14,10.78 4.92,11.56L7.14,13.78C7.92,14.56 9.2,14.56 9.98,13.78L11.38,12.38L14.05,15.05L12.65,16.45C10.39,18.71 6.73,18.71 4.47,16.45L2.25,14.23C-0.01,11.97 -0.01,8.31 2.25,6.05Z" fill="#4E78E8"/><path d="M11.35,7.55C13.61,5.29 17.27,5.29 19.53,7.55L21.75,9.77C24.01,12.03 24.01,15.69 21.75,17.95L20.75,18.95C18.49,21.21 14.83,21.21 12.57,18.95L10.35,16.73L13.02,14.06L15.24,16.28C16.02,17.06 17.3,17.06 18.08,16.28L19.08,15.28C19.86,14.5 19.86,13.22 19.08,12.44L16.86,10.22C16.08,9.44 14.8,9.44 14.02,10.22L12.62,11.62L9.95,8.95Z" fill="#30B69A"/><path d="M8.6,13.3L13.3,8.6L15.4,10.7L10.7,15.4Z" fill="#FFFFFF" fill-opacity="1.000"/></symbol><symbol id="microphone" viewBox="0 0 24 24"><path d="M12,1.5C9.38,1.5 7.25,3.63 7.25,6.25V11.75C7.25,14.37 9.38,16.5 12,16.5S16.75,14.37 16.75,11.75V6.25C16.75,3.63 14.62,1.5 12,1.5Z" fill="#4E78E8"/><path d="M10.2,5.2H13.8V11.7C13.8,12.69 12.99,13.5 12,13.5S10.2,12.69 10.2,11.7Z" fill="#FFFFFF" fill-opacity="0.9"/><path d="M4,10.5H6.7C6.7,14.15 8.62,16.1 12,16.1S17.3,14.15 17.3,10.5H20C20,15.18 17.38,18.02 13.4,18.75V21H17V23H7V21H10.6V18.75C6.62,18.02 4,15.18 4,10.5Z" fill="#30B69A"/></symbol><symbol id="model" viewBox="0 0 24 24"><path d="M12,1.4L22,6.4L12,11.4L2,6.4Z" fill="#4E78E8"/><path d="M2,9.6L12,14.6L22,9.6V13L12,18L2,13Z" fill="#8A72E8"/><path d="M2,15.2L12,20.2L22,15.2V18.6L12,23.6L2,18.6Z" fill="#4E78E8" fill-opacity="0.74"/></symbol><symbol id="move" viewBox="0 0 24 24"><path d="M3.2,3.5H8.5L10.8,6H17.2C18.75,6 20,7.25 20,8.8V19.2C20,20.75 18.75,22 17.2,22H4.8C3.25,22 2,20.75 2,19.2V4.7C2,4.04 2.54,3.5 3.2,3.5Z" fill="#30B69A"/><path d="M11,9H18.5V5.8L23.8,11.2L18.5,16.6V13.4H11Z" fill="#4E78E8"/></symbol><symbol id="new_chat" viewBox="0 0 24 24"><path d="M5.3,2.5H18.7C21.07,2.5 23,4.43 23,6.8V14.1C23,16.47 21.07,18.4 18.7,18.4H10.3L4.3,22.3L5.15,18C2.78,17.92 1,16.05 1,13.8V6.8C1,4.43 2.93,2.5 5.3,2.5Z" fill="#4E78E8"/><path d="M10.6,6.3H13.4V9.2H16.3V12H13.4V14.9H10.6V12H7.7V9.2H10.6Z" fill="#FFFFFF" fill-opacity="1.000"/></symbol><symbol id="notification" viewBox="0 0 24 24"><path d="M3.1,18.2C5,16.02 5.4,14.1 5.4,10.5C5.4,6.7 8.32,3.6 12,3.6S18.6,6.7 18.6,10.5C18.6,14.1 19,16.02 20.9,18.2C21.78,19.22 21.06,20.8 19.7,20.8H4.3C2.94,20.8 2.22,19.22 3.1,18.2Z" fill="#EF7B72"/><path d="M8.5,20H15.5C15.16,22.18 13.9,23.3 12,23.3S8.84,22.18 8.5,20Z" fill="#EF7B72"/><path d="M8.2,9.3C8.58,7.2 9.72,6.18 11.55,5.92" fill="#000000" fill-opacity="0.000" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-opacity="0.82"/></symbol><symbol id="photo" viewBox="0 0 24 24"><path d="M4,2H20C21.66,2 23,3.34 23,5V19C23,20.66 21.66,22 20,22H4C2.34,22 1,20.66 1,19V5C1,3.34 2.34,2 4,2Z" fill="#8A72E8"/><path d="M2.8,19L8.2,12.8L11.6,16.3L16,10.8L21.2,16.6V20.2H2.8Z" fill="#30B69A"/><path d="M17.1,5.2a2.35,2.35 0,1 0,0 4.7a2.35,2.35 0,1 0,0 -4.7" fill="#F2B84B"/></symbol><symbol id="pinned" viewBox="0 0 24 24"><path d="M6,2.5H18V22L12,17.8L6,22Z" fill="#F2B84B"/><path d="M8.5,5H15.5V7.2H8.5Z" fill="#FFFFFF" fill-opacity="0.82"/></symbol><symbol id="profile" viewBox="0 0 24 24"><path d="M12,2.2C9.35,2.2 7.2,4.35 7.2,7S9.35,11.8 12,11.8S16.8,9.65 16.8,7S14.65,2.2 12,2.2Z" fill="#4E78E8"/><path d="M12,12.8C6.55,12.8 3.2,16.18 2.5,21.8H21.5C20.8,16.18 17.45,12.8 12,12.8Z" fill="#4E78E8"/><path d="M6.6,18.8C8.08,17.32 9.86,16.6 12,16.6S15.92,17.32 17.4,18.8" fill="#000000" fill-opacity="0.000" stroke="#FFFFFF" stroke-width="2.1" stroke-linecap="round"/></symbol><symbol id="project" viewBox="0 0 24 24"><path d="M3.2,3.4H8.8L11.1,6H19.2C20.75,6 22,7.25 22,8.8V18H2V4.6C2,3.94 2.54,3.4 3.2,3.4Z" fill="#F2B84B"/><path d="M4.2,7.3H19.8C21.02,7.3 22,8.28 22,9.5V18.5C22,20.43 20.43,22 18.5,22H5.5C3.57,22 2,20.43 2,18.5V9.5C2,8.28 2.98,7.3 4.2,7.3Z" fill="#4E78E8"/><path d="M5.5,11H10.5V14.2H5.5ZM12.1,11H18.5V14.2H12.1ZM5.5,16H13.2V19H5.5ZM14.8,16H18.5V19H14.8Z" fill="#FFFFFF" fill-opacity="1.000"/></symbol><symbol id="recent" viewBox="0 0 24 24"><path d="M12,1.5a10.5,10.5 0,1 0,0 21a10.5,10.5 0,1 0,0 -21" fill="#4E78E8"/><path d="M10.6,5H13.4V11.1L18.7,14.15L17.3,16.6L10.6,12.75Z" fill="#FFFFFF" fill-opacity="1.000"/></symbol><symbol id="rename" viewBox="0 0 24 24"><path d="M3,16.8L4.2,22L9.4,20.8L20.3,9.9L14.1,3.7Z" fill="#8A72E8"/><path d="M14.5,3.3L16.9,0.9C17.88,-0.08 19.46,-0.08 20.44,0.9L23.1,3.56C24.08,4.54 24.08,6.12 23.1,7.1L20.7,9.5Z" fill="#4E78E8"/><path d="M3,16.8L9.4,20.8L4.2,22Z" fill="#F2B84B"/><path d="M1,22H12V24H1Z" fill="#4E78E8"/></symbol><symbol id="search" viewBox="0 0 24 24"><path d="M10.2,1.5C5.4,1.5 1.5,5.4 1.5,10.2S5.4,18.9 10.2,18.9C12.05,18.9 13.77,18.32 15.18,17.34L20.05,22.2C20.93,23.08 22.35,23.08 23.23,22.2C24.11,21.32 24.11,19.9 23.23,19.02L18.36,14.16C19.34,12.75 19.9,11.04 19.9,9.2C19.9,4.4 16,1.5 10.2,1.5ZM10.2,5.2C12.96,5.2 15.2,7.44 15.2,10.2S12.96,15.2 10.2,15.2S5.2,12.96 5.2,10.2S7.44,5.2 10.2,5.2Z" fill="#4E78E8" fill-rule="evenodd"/></symbol><symbol id="space" viewBox="0 0 24 24"><path d="M3.2,3.4H8.8L11.1,6H19.2C20.75,6 22,7.25 22,8.8V18H2V4.6C2,3.94 2.54,3.4 3.2,3.4Z" fill="#30B69A"/><path d="M4.2,7.3H19.8C21.02,7.3 22,8.28 22,9.5V18.5C22,20.43 20.43,22 18.5,22H5.5C3.57,22 2,20.43 2,18.5V9.5C2,8.28 2.98,7.3 4.2,7.3Z" fill="#4E78E8"/><path d="M6.2,10.4H17.8V18.3H6.2ZM8,12.2V13.7H16V12.2ZM8,15.2V16.7H13.5V15.2Z" fill="#FFFFFF" fill-rule="evenodd" fill-opacity="1.000"/></symbol><symbol id="storage" viewBox="0 0 24 24"><path d="M2.5,5.2C2.5,3.05 6.75,1.3 12,1.3S21.5,3.05 21.5,5.2V18.7C21.5,20.85 17.25,22.6 12,22.6S2.5,20.85 2.5,18.7Z" fill="#4E78E8"/><path d="M2.5,5.2C4.55,7.35 7.7,8.4 12,8.4S19.45,7.35 21.5,5.2V8C19.45,10.15 16.3,11.2 12,11.2S4.55,10.15 2.5,8ZM2.5,12C4.55,14.15 7.7,15.2 12,15.2S19.45,14.15 21.5,12V14.8C19.45,16.95 16.3,18 12,18S4.55,16.95 2.5,14.8Z" fill="#FFFFFF" fill-opacity="0.84"/><path d="M7,4.2H17V6.2H7Z" fill="#30B69A"/></symbol><symbol id="task" viewBox="0 0 24 24"><path d="M5,2H19C20.66,2 22,3.34 22,5V19C22,20.66 20.66,22 19,22H5C3.34,22 2,20.66 2,19V5C2,3.34 3.34,2 5,2Z" fill="#8A72E8"/><path d="M5.2,7.7L7.4,9.9L10.7,6.6L12.3,8.2L7.4,13.1L3.6,9.3ZM13.2,7.5H19.2V10H13.2ZM5.2,15.2L7.4,17.4L10.7,14.1L12.3,15.7L7.4,20.6L3.6,16.8ZM13.2,15H19.2V17.5H13.2Z" fill="#FFFFFF" fill-opacity="1.000"/></symbol><symbol id="todo" viewBox="0 0 24 24"><path d="M4.5,3.5H19.5C21.16,3.5 22.5,4.84 22.5,6.5V20.5C22.5,22.16 21.16,23.5 19.5,23.5H4.5C2.84,23.5 1.5,22.16 1.5,20.5V6.5C1.5,4.84 2.84,3.5 4.5,3.5Z" fill="#4E78E8"/><path d="M7,0.5H17C17.83,0.5 18.5,1.17 18.5,2V6.5H5.5V2C5.5,1.17 6.17,0.5 7,0.5Z" fill="#8A72E8"/><path d="M4.6,10.5L6.8,12.65L9.9,9.55L11.45,11.1L6.8,15.75L3.05,12.05ZM12.8,10.3H19.4V12.6H12.8ZM4.6,17.1L6.8,19.25L9.9,16.15L11.45,17.7L6.8,22.35L3.05,18.65ZM12.8,16.9H19.4V19.2H12.8Z" fill="#FFFFFF" fill-opacity="1.000"/></symbol><symbol id="verified" viewBox="0 0 24 24"><path d="M12,1.5L21,5.1V11.2C21,16.95 17.35,21.05 12,22.8C6.65,21.05 3,16.95 3,11.2V5.1Z" fill="#30B69A"/><path d="M6.2,11.7L10.05,15.5L17.85,7.7L19.75,9.6L10.05,19.35L4.3,13.6Z" fill="#FFFFFF" fill-opacity="1.000"/></symbol></defs>
+  <rect width="1200" height="930" fill="#F4F6FB"/>
+  <text x="28" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#1C2435">HERMES · SOLID GEO ICON SYSTEM</text>
+  <text x="28" y="79" font-family="Arial, sans-serif" font-size="15" fill="#6D7587">30 refined semantic assets · large form + 18 px dark navigation check</text>
+  
+    <g>
+      <rect x="24" y="112" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      <rect x="84" y="129" width="60" height="60" rx="17" fill="#4E78E8"/>
+      <use href="#logo_mark" x="84" y="129" width="60" height="60"/>
+      <text x="114" y="213" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">APP MARK</text>
+      <rect x="48" y="225" width="132" height="24" rx="12" fill="#151A24"/>
+      <rect x="101" y="227" width="20" height="20" rx="6" fill="#4E78E8"/>
+      <use href="#logo_mark" x="102" y="228" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="216" y="112" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#ai" x="276" y="129" width="60" height="60"/>
+      <text x="306" y="213" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">AI</text>
+      <rect x="240" y="225" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#ai" x="294" y="228" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="408" y="112" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#appearance" x="468" y="129" width="60" height="60"/>
+      <text x="498" y="213" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">APPEARANCE</text>
+      <rect x="432" y="225" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#appearance" x="486" y="228" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="600" y="112" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#archive" x="660" y="129" width="60" height="60"/>
+      <text x="690" y="213" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">ARCHIVE</text>
+      <rect x="624" y="225" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#archive" x="678" y="228" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="792" y="112" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#artifact" x="852" y="129" width="60" height="60"/>
+      <text x="882" y="213" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">ARTIFACT</text>
+      <rect x="816" y="225" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#artifact" x="870" y="228" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="984" y="112" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#attachment" x="1044" y="129" width="60" height="60"/>
+      <text x="1074" y="213" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">ATTACHMENT</text>
+      <rect x="1008" y="225" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#attachment" x="1062" y="228" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="24" y="270" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#chat" x="84" y="287" width="60" height="60"/>
+      <text x="114" y="371" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">CHAT</text>
+      <rect x="48" y="383" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#chat" x="102" y="386" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="216" y="270" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#connection" x="276" y="287" width="60" height="60"/>
+      <text x="306" y="371" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">CONNECTION</text>
+      <rect x="240" y="383" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#connection" x="294" y="386" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="408" y="270" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#delete" x="468" y="287" width="60" height="60"/>
+      <text x="498" y="371" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">DELETE</text>
+      <rect x="432" y="383" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#delete" x="486" y="386" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="600" y="270" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#file" x="660" y="287" width="60" height="60"/>
+      <text x="690" y="371" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">FILE</text>
+      <rect x="624" y="383" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#file" x="678" y="386" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="792" y="270" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#folder" x="852" y="287" width="60" height="60"/>
+      <text x="882" y="371" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">FOLDER</text>
+      <rect x="816" y="383" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#folder" x="870" y="386" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="984" y="270" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#information" x="1044" y="287" width="60" height="60"/>
+      <text x="1074" y="371" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">INFORMATION</text>
+      <rect x="1008" y="383" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#information" x="1062" y="386" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="24" y="428" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#link" x="84" y="445" width="60" height="60"/>
+      <text x="114" y="529" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">LINK</text>
+      <rect x="48" y="541" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#link" x="102" y="544" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="216" y="428" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#microphone" x="276" y="445" width="60" height="60"/>
+      <text x="306" y="529" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">MICROPHONE</text>
+      <rect x="240" y="541" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#microphone" x="294" y="544" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="408" y="428" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#model" x="468" y="445" width="60" height="60"/>
+      <text x="498" y="529" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">MODEL</text>
+      <rect x="432" y="541" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#model" x="486" y="544" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="600" y="428" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#move" x="660" y="445" width="60" height="60"/>
+      <text x="690" y="529" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">MOVE</text>
+      <rect x="624" y="541" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#move" x="678" y="544" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="792" y="428" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#new_chat" x="852" y="445" width="60" height="60"/>
+      <text x="882" y="529" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">NEW CHAT</text>
+      <rect x="816" y="541" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#new_chat" x="870" y="544" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="984" y="428" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#notification" x="1044" y="445" width="60" height="60"/>
+      <text x="1074" y="529" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">NOTIFICATION</text>
+      <rect x="1008" y="541" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#notification" x="1062" y="544" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="24" y="586" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#photo" x="84" y="603" width="60" height="60"/>
+      <text x="114" y="687" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">PHOTO</text>
+      <rect x="48" y="699" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#photo" x="102" y="702" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="216" y="586" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#pinned" x="276" y="603" width="60" height="60"/>
+      <text x="306" y="687" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">PINNED</text>
+      <rect x="240" y="699" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#pinned" x="294" y="702" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="408" y="586" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#profile" x="468" y="603" width="60" height="60"/>
+      <text x="498" y="687" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">PROFILE</text>
+      <rect x="432" y="699" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#profile" x="486" y="702" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="600" y="586" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#project" x="660" y="603" width="60" height="60"/>
+      <text x="690" y="687" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">PROJECT</text>
+      <rect x="624" y="699" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#project" x="678" y="702" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="792" y="586" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#recent" x="852" y="603" width="60" height="60"/>
+      <text x="882" y="687" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">RECENT</text>
+      <rect x="816" y="699" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#recent" x="870" y="702" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="984" y="586" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#rename" x="1044" y="603" width="60" height="60"/>
+      <text x="1074" y="687" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">RENAME</text>
+      <rect x="1008" y="699" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#rename" x="1062" y="702" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="24" y="744" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#search" x="84" y="761" width="60" height="60"/>
+      <text x="114" y="845" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">SEARCH</text>
+      <rect x="48" y="857" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#search" x="102" y="860" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="216" y="744" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#space" x="276" y="761" width="60" height="60"/>
+      <text x="306" y="845" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">SPACE</text>
+      <rect x="240" y="857" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#space" x="294" y="860" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="408" y="744" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#storage" x="468" y="761" width="60" height="60"/>
+      <text x="498" y="845" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">STORAGE</text>
+      <rect x="432" y="857" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#storage" x="486" y="860" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="600" y="744" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#task" x="660" y="761" width="60" height="60"/>
+      <text x="690" y="845" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">TASK</text>
+      <rect x="624" y="857" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#task" x="678" y="860" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="792" y="744" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#todo" x="852" y="761" width="60" height="60"/>
+      <text x="882" y="845" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">TODO</text>
+      <rect x="816" y="857" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#todo" x="870" y="860" width="18" height="18"/>
+    </g>
+    <g>
+      <rect x="984" y="744" width="180" height="146" rx="20" fill="#FFFFFF"/>
+      
+      <use href="#verified" x="1044" y="761" width="60" height="60"/>
+      <text x="1074" y="845" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293247">VERIFIED</text>
+      <rect x="1008" y="857" width="132" height="24" rx="12" fill="#151A24"/>
+      
+      <use href="#verified" x="1062" y="860" width="18" height="18"/>
+    </g>
+</svg>

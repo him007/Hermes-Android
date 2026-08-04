@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="24dp" android:height="24dp" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:pathData="M7.5,6 H16.5 A6,6 0 0 1 22.5,12 V12 A6,6 0 0 1 16.5,18 H7.5 A6,6 0 0 1 1.5,12 V12 A6,6 0 0 1 7.5,6 Z" android:fillColor="@color/hermes_icon_blue" />
+    <path android:pathData="M12.3,12 A4.2,4.2 0 1 0 20.7,12 A4.2,4.2 0 1 0 12.3,12 Z" android:fillColor="@color/hermes_icon_on_color" />
+    <path android:pathData="m5.3 12 1.6 1.6 2.5-2.8" android:fillColor="@android:color/transparent" android:strokeColor="@color/hermes_icon_on_color" android:strokeWidth="1.5" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillAlpha=".9" android:strokeAlpha=".9" />
+</vector>

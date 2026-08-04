@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="hermes_icon_blue">#82A2FF</color>
+    <color name="hermes_icon_cyan">#44D6D5</color>
+    <color name="hermes_icon_green">#4ED6A4</color>
+    <color name="hermes_icon_purple">#AA8BFF</color>
+    <color name="hermes_icon_amber">#FFC85C</color>
+    <color name="hermes_icon_coral">#FF7A86</color>
+    <color name="hermes_icon_ink">#D7DEEC</color>
+    <color name="hermes_icon_on_color">#FFFFFF</color>
+
+    <color name="hermes_icon_mint">#4ED6A4</color>
+    <color name="hermes_icon_lavender">#AA8BFF</color>
+</resources>

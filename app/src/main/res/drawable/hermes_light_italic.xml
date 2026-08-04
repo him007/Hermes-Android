@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="24dp" android:height="24dp" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:pathData="M10 3h10v3h-3.4l-4.2 12H16v3H6v-3h3.4l4.2-12H10Z" android:fillColor="@color/hermes_icon_purple" />
+</vector>
