@@ -15,7 +15,6 @@ import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.gestures.detectLongPressGesture
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
@@ -482,17 +481,9 @@ private fun MessageItem(
 
         when (message.role) {
         MessageRole.USER -> {
-            var isLongPressed by remember { mutableStateOf(false) }
             Column(
                 horizontalAlignment = Alignment.End,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .pointerInput(Unit) {
-                        detectLongPressGesture(onLongPress = {
-                            isLongPressed = true
-                            copyMessageContent()
-                        })
-                    }
+                modifier = Modifier.fillMaxWidth()
             ) {
                 Text(
                     userName,
@@ -516,11 +507,7 @@ private fun MessageItem(
                             if (skin.glass) Modifier.border(0.8.dp, MaterialTheme.colorScheme.outlineVariant, bubbleShape)
                             else Modifier,
                         )
-                        .pointerInput(Unit) {
-                            detectLongPressGesture(onLongPress = {
-                                copyMessageContent()
-                            })
-                        },
+                        .clickable(onClick = { copyMessageContent() }),
                 ) {
                     Column {
                         if (message.content.isNotBlank()) {
@@ -581,11 +568,7 @@ private fun MessageItem(
                     modifier = Modifier
                         .weight(1f)
                         .padding(start = 11.dp, end = 4.dp, top = 3.dp)
-                        .pointerInput(Unit) {
-                            detectLongPressGesture(onLongPress = {
-                                copyMessageContent()
-                            })
-                        }
+                        .clickable(onClick = { copyMessageContent() })
                 ) {
                     Text(
                         hermesName,
