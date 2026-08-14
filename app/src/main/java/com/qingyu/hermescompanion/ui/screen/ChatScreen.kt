@@ -297,10 +297,12 @@ fun ChatScreen(
                             }
                         }
                     }
+                    }
                 }
             }
+        }
 
-            Composer(
+        Composer(
             draft = state.draft,
             attachments = state.attachments,
             assistantName = hermesName,
