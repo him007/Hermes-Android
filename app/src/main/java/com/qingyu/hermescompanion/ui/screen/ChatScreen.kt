@@ -2,8 +2,12 @@ package com.qingyu.hermescompanion.ui.screen
 
 import android.app.Activity
 import android.content.ActivityNotFoundException
+import android.content.ClipData
+import android.content.ClipboardManager
+import android.content.Context
 import android.content.Intent
 import android.speech.RecognizerIntent
+import android.widget.Toast
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.animation.AnimatedVisibility
@@ -11,6 +15,7 @@ import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.gestures.detectLongPressGesture
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxWithConstraints
@@ -32,9 +37,12 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.selection.selectable
+import androidx.compose.foundation.selection.selectableGroup
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
+import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.AlertDialog
@@ -55,6 +63,8 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.platform.LocalSelectionContainer
+import androidx.compose.ui.text.TextRange
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -241,7 +251,8 @@ fun ChatScreen(
                 }
 
                 else -> {
-                    Box(Modifier.fillMaxSize()) {
+                    SelectionContainer {
+                        Box(Modifier.fillMaxSize()) {
                         LazyColumn(
                             state = listState,
                             modifier = Modifier.fillMaxSize(),
@@ -296,6 +307,7 @@ fun ChatScreen(
                                 }
                             }
                         }
+                    }
                     }
                 }
             }
@@ -456,16 +468,34 @@ private fun MessageItem(
     hermesAvatarUri: String,
     inlineImagePreviews: Map<String, com.qingyu.hermescompanion.model.ImagePreview>,
 ) {
+    val context = LocalContext.current
     val skin = HermesSkin.current
     BoxWithConstraints(modifier = Modifier.fillMaxWidth()) {
         val userBubbleMaxWidth = maxWidth * 0.76f
+
+        fun copyMessageContent() {
+            if (message.content.isNotBlank()) {
+                val clipboard = context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+                val clip = ClipData.newPlainText("Hermes message", message.content)
+                clipboard.setPrimaryClip(clip)
+                Toast.makeText(context, "已复制", Toast.LENGTH_SHORT).show()
+            }
+        }
+
         when (message.role) {
-        MessageRole.USER -> Row(
-            modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.End,
-            verticalAlignment = Alignment.Top,
-        ) {
-            Column(horizontalAlignment = Alignment.End) {
+        MessageRole.USER -> {
+            var isLongPressed by remember { mutableStateOf(false) }
+            Column(
+                horizontalAlignment = Alignment.End,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .pointerInput(Unit) {
+                        detectLongPressGesture(onLongPress = {
+                            isLongPressed = true
+                            copyMessageContent()
+                        })
+                    }
+            ) {
                 Text(
                     userName,
                     style = MaterialTheme.typography.labelMedium,
@@ -487,7 +517,12 @@ private fun MessageItem(
                         .then(
                             if (skin.glass) Modifier.border(0.8.dp, MaterialTheme.colorScheme.outlineVariant, bubbleShape)
                             else Modifier,
-                        ),
+                        )
+                        .pointerInput(Unit) {
+                            detectLongPressGesture(onLongPress = {
+                                copyMessageContent()
+                            })
+                        },
                 ) {
                     Column {
                         if (message.content.isNotBlank()) {
@@ -526,30 +561,41 @@ private fun MessageItem(
             }
         }
 
-        MessageRole.ASSISTANT -> Row(
-            modifier = Modifier.fillMaxWidth(),
-            verticalAlignment = Alignment.Top,
-        ) {
-            Box(Modifier.padding(top = 1.dp)) {
-                if (hermesAvatarUri.isNotBlank()) {
-                    UserAvatar(
-                        uri = hermesAvatarUri,
-                        displayName = hermesName,
-                        size = 32.dp,
-                        hermesFallback = true,
-                    )
-                } else {
-                    HermesMark(compact = true)
+        MessageRole.ASSISTANT -> {
+            var isLongPressed by remember { mutableStateOf(false) }
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.Top,
+            ) {
+                Box(Modifier.padding(top = 1.dp)) {
+                    if (hermesAvatarUri.isNotBlank()) {
+                        UserAvatar(
+                            uri = hermesAvatarUri,
+                            displayName = hermesName,
+                            size = 32.dp,
+                            hermesFallback = true,
+                        )
+                    } else {
+                        HermesMark(compact = true)
+                    }
                 }
-            }
-            Column(modifier = Modifier.weight(1f).padding(start = 11.dp, end = 4.dp, top = 3.dp)) {
-                Text(
-                    hermesName,
-                    style = MaterialTheme.typography.labelMedium,
-                    fontWeight = FontWeight.SemiBold,
-                    color = MaterialTheme.colorScheme.primary,
-                    modifier = Modifier.padding(bottom = 4.dp),
-                )
+                Column(
+                    modifier = Modifier
+                        .weight(1f)
+                        .padding(start = 11.dp, end = 4.dp, top = 3.dp)
+                        .pointerInput(Unit) {
+                            detectLongPressGesture(onLongPress = {
+                                copyMessageContent()
+                            })
+                        }
+                ) {
+                    Text(
+                        hermesName,
+                        style = MaterialTheme.typography.labelMedium,
+                        fontWeight = FontWeight.SemiBold,
+                        color = MaterialTheme.colorScheme.primary,
+                        modifier = Modifier.padding(bottom = 4.dp),
+                    )
                     if (message.content.isNotBlank()) {
                         MarkdownContent(
                             markdown = message.content,
@@ -584,6 +630,7 @@ private fun MessageItem(
                             )
                         }
                     }
+                }
             }
         }
 
