@@ -8,4 +8,5 @@ captures/
 .DS_Store
 *.jks
 *.keystore
+!signing/hermes-debug.keystore
 
