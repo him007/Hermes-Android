@@ -82,11 +82,9 @@ import com.qingyu.hermescompanion.model.ToolStatus
 import com.qingyu.hermescompanion.ui.AppUiState
 import com.qingyu.hermescompanion.ui.findChatImageTargets
 import com.qingyu.hermescompanion.ui.component.HermesIconKind
-import com.qingyu.hermescompanion.ui.component.HermesMark
 import com.qingyu.hermescompanion.ui.component.HermesMulticolorIcon
 import com.qingyu.hermescompanion.ui.component.HermesStatusIcon
 import com.qingyu.hermescompanion.ui.component.HermesStatusKind
-import com.qingyu.hermescompanion.ui.component.UserAvatar
 import com.qingyu.hermescompanion.ui.component.MarkdownContent
 import com.qingyu.hermescompanion.ui.component.PreviewableImage
 import com.qingyu.hermescompanion.ui.format.messageTimeLabel
@@ -241,8 +239,6 @@ fun ChatScreen(
                 state.messages.isEmpty() -> {
                     EmptyConversation(
                         onSuggestion = onDraftChange,
-                        hermesName = hermesName,
-                        hermesAvatarUri = state.userProfile.hermesAvatarUri,
                         modifier = Modifier.align(Alignment.Center),
                     )
                 }
@@ -264,16 +260,12 @@ fun ChatScreen(
                                     message = message,
                                     onOpenImage = onOpenImage,
                                     onOpenLink = onOpenLink,
-                                    userName = state.userProfile.displayName.ifBlank { state.username.ifBlank { "我" } },
-                                    userAvatarUri = state.userProfile.avatarUri,
-                                    hermesName = hermesName,
-                                    hermesAvatarUri = state.userProfile.hermesAvatarUri,
                                     inlineImagePreviews = state.inlineImagePreviews,
                                 )
                             }
                             if (isCurrentSessionStreaming && state.toolActivities.isNotEmpty()) {
                                 item(key = "tool-activities") {
-                                    ToolActivityPanel(state.toolActivities, hermesName)
+                                    ToolActivityPanel(state.toolActivities)
                                 }
                             }
                         }
@@ -305,12 +297,10 @@ fun ChatScreen(
                             }
                         }
                     }
-                    }
                 }
             }
-        }
 
-        Composer(
+            Composer(
             draft = state.draft,
             attachments = state.attachments,
             assistantName = hermesName,
@@ -459,10 +449,6 @@ private fun MessageItem(
     message: ChatMessage,
     onOpenImage: (String, String) -> Unit,
     onOpenLink: (String) -> Unit,
-    userName: String,
-    userAvatarUri: String,
-    hermesName: String,
-    hermesAvatarUri: String,
     inlineImagePreviews: Map<String, com.qingyu.hermescompanion.model.ImagePreview>,
 ) {
     val context = LocalContext.current
@@ -485,13 +471,6 @@ private fun MessageItem(
                 horizontalAlignment = Alignment.End,
                 modifier = Modifier.fillMaxWidth()
             ) {
-                Text(
-                    userName,
-                    style = MaterialTheme.typography.labelMedium,
-                    fontWeight = FontWeight.SemiBold,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    modifier = Modifier.padding(end = 2.dp, bottom = 4.dp),
-                )
                 val bubbleShape = RoundedCornerShape(18.dp, 7.dp, 18.dp, 18.dp)
                 Box(
                     modifier = Modifier.widthIn(max = userBubbleMaxWidth)
@@ -537,13 +516,6 @@ private fun MessageItem(
                     }
                 }
             }
-            Box(Modifier.padding(start = 8.dp, top = 1.dp)) {
-                UserAvatar(
-                    uri = userAvatarUri,
-                    displayName = userName,
-                    size = 32.dp,
-                )
-            }
         }
 
         MessageRole.ASSISTANT -> {
@@ -552,31 +524,12 @@ private fun MessageItem(
                 modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.Top,
             ) {
-                Box(Modifier.padding(top = 1.dp)) {
-                    if (hermesAvatarUri.isNotBlank()) {
-                        UserAvatar(
-                            uri = hermesAvatarUri,
-                            displayName = hermesName,
-                            size = 32.dp,
-                            hermesFallback = true,
-                        )
-                    } else {
-                        HermesMark(compact = true)
-                    }
-                }
                 Column(
                     modifier = Modifier
                         .weight(1f)
                         .padding(start = 11.dp, end = 4.dp, top = 3.dp)
                         .clickable(onClick = { copyMessageContent() })
                 ) {
-                    Text(
-                        hermesName,
-                        style = MaterialTheme.typography.labelMedium,
-                        fontWeight = FontWeight.SemiBold,
-                        color = MaterialTheme.colorScheme.primary,
-                        modifier = Modifier.padding(bottom = 4.dp),
-                    )
                     if (message.content.isNotBlank()) {
                         MarkdownContent(
                             markdown = message.content,
@@ -621,11 +574,11 @@ private fun MessageItem(
 }
 
 @Composable
-private fun ToolActivityPanel(activities: List<ToolActivity>, hermesName: String) {
+private fun ToolActivityPanel(activities: List<ToolActivity>) {
     val running = activities.count { it.status == ToolStatus.RUNNING }
     val completed = activities.count { it.status == ToolStatus.COMPLETED }
     Surface(
-        modifier = Modifier.fillMaxWidth().padding(start = 43.dp, end = 4.dp),
+        modifier = Modifier.fillMaxWidth().padding(start = 4.dp, end = 4.dp),
         shape = RoundedCornerShape(12.dp),
         color = MaterialTheme.colorScheme.surfaceContainer,
         tonalElevation = 0.dp,
@@ -634,9 +587,9 @@ private fun ToolActivityPanel(activities: List<ToolActivity>, hermesName: String
             CircularProgressIndicator(Modifier.size(17.dp), strokeWidth = 2.dp, color = MaterialTheme.colorScheme.secondary)
             Text(
                 text = when {
-                    running > 0 -> "$hermesName 正在处理 · $running 项进行中"
-                    completed > 0 -> "$hermesName 正在整理结果 · 已完成 $completed 项"
-                    else -> "$hermesName 正在处理"
+                    running > 0 -> "Hermes 正在处理 · $running 项进行中"
+                    completed > 0 -> "Hermes 正在整理结果 · 已完成 $completed 项"
+                    else -> "Hermes 正在处理"
                 },
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
@@ -908,8 +861,6 @@ private fun AttachmentChip(attachment: PendingAttachment, onOpen: () -> Unit, on
 @Composable
 private fun EmptyConversation(
     onSuggestion: (String) -> Unit,
-    hermesName: String,
-    hermesAvatarUri: String,
     modifier: Modifier = Modifier,
 ) {
     Column(
@@ -917,16 +868,6 @@ private fun EmptyConversation(
         horizontalAlignment = Alignment.Start,
     ) {
         Row(verticalAlignment = Alignment.CenterVertically) {
-            if (hermesAvatarUri.isNotBlank()) {
-                UserAvatar(
-                    uri = hermesAvatarUri,
-                    displayName = hermesName,
-                    size = 48.dp,
-                    hermesFallback = true,
-                )
-            } else {
-                HermesMark()
-            }
             Column(modifier = Modifier.padding(start = 12.dp)) {
                 Text(text = "今天需要我做什么？", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
                 Text("可以提问，也可以直接交代任务", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
